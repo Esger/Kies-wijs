@@ -4,7 +4,7 @@
 	<ul class="partyList"
 		if.bind="showList">
 		<template repeat.for="party of parties | sort: { propertyName: 'sortingWeight', direction: 'descending', propertyName2 : 'naam', direction2: 'ascending' }">
-			<li class="partyList__item ${$index < 3 ? 'hint--bottom' : 'hint--top'}"
+			<li class="partyList__item ${$index < 5 ? 'hint--bottom' : 'hint--top'}"
 				data-sorting-weight.bind="party.sortingWeight"
 				aria-label.one-time="party.ingredienten | ingredientenLijst">
 				<h4><span class="partyList__item--number">${party.nummer}</span>
