@@ -1,13 +1,16 @@
 export class SortValueConverter {
-    toView(array, config) {
-        var factor = (config.direction || 'ascending') === 'ascending' ? 1 : -1;
-        var factor2 = (config.direction2 || 'ascending') === 'ascending' ? 1 : -1;
-        return array
-            .slice(0)
-            .sort(function (a, b) {
-                let result = (a[config.propertyName] - b[config.propertyName]) * factor;
-                let result2 = (a[config.propertyName2] - b[config.propertyName2]) * factor2;
-                return result || result2;
-            });
-    }
+	toView(array, config) {
+		const factor = (config.direction || 'ascending') === 'ascending' ? 1 : -1;
+		const factor2 = (config.direction2 || 'ascending') === 'ascending' ? 1 : -1;
+		return array
+			.slice(0)
+			.sort(function (a, b) {
+				const result = (a[config.propertyName] - b[config.propertyName]) * factor;
+				const stringA = '' + a[config.propertyName2];
+				const stringB = '' + b[config.propertyName2];
+				const result2 = ('' + stringA).localeCompare(('' + stringB), 'nl') * factor2;
+				const theResult = result || result2;
+				return theResult;
+			});
+	}
 }

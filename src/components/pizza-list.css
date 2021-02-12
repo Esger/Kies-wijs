@@ -3,40 +3,46 @@
 \*------------------------------------*/
 
 .pizza-list {
-    list-style-type: none;
-    padding-left: 0;
+	list-style-type: none;
+	padding-left   : 0;
 }
 
 .pizza-list__item {
-    position: relative;
-    font-size: 1em;
+	position : relative;
+	font-size: 1em;
 }
-.pizza-list__item + .pizza-list__item{
-    margin-top: 20px;
+
+.pizza-list__item+.pizza-list__item {
+	margin-top: 20px;
 }
+
 .pizza-list__item__number {
-    position: absolute;
+	position: absolute;
 }
 
 .pizza-list__item__title {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 .pizza-list__item__ingredients {
-    margin: 3px 0 0 30px;
-    font-family: palatino, cursive;
-    font-style: italic;
-    font-size: .9em;
-    text-transform: capitalize;
+	margin        : 3px 0 0 30px;
+	font-family   : palatino, cursive;
+	font-style    : italic;
+	font-size     : .7em;
+	text-transform: capitalize;
 }
+
 @media screen and (max-width: 600px) {
-    .pizza-list__item + .pizza-list__item {
-        margin-top :10px;
-    }
-    .pizza-list__item__title {
-        margin-left: 24px;
-    }
-    .pizza-list__item__ingredients {
-        margin: 3px 0 0 24px; {
-    }
-}
+	.pizza-list__item+.pizza-list__item {
+		margin-top: 10px;
+	}
+
+	.pizza-list__item__title {
+		margin-left: 24px;
+	}
+
+	.pizza-list__item__ingredients {
+		margin: 3px 0 0 24px;
+
+			{}
+	}

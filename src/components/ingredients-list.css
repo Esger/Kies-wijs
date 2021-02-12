@@ -2,8 +2,20 @@
   #INGREDIENTS-LIST
 \*------------------------------------*/
 
-.ingredients-list {
+.ingredientsList {
 	list-style-type: none;
+}
+
+.ingredientsList li {
+	display : block;
+	position: relative;
+}
+
+.ingredientsList [class*=hint--]::after {
+	max-width  : 100%;
+	white-space: pre-wrap;
+	width      : max-content;
+	line-height: 1.6;
 }
 
 .ingredients__buttonGroup {
@@ -11,6 +23,7 @@
 	display         : flex;
 	flex-direction  : row;
 	justify-content : space-between;
+	align-items     : center;
 	border          : 1px solid #e8e8e8;
 	margin-bottom   : 10px;
 	background-color: whitesmoke;
@@ -18,24 +31,20 @@
 }
 
 [class^=ingredients__button--] {
-	position: absolute;
-	;
-	display         : block;
 	width           : 40%;
 	z-index         : 0;
 	height          : 100%;
-	line-height     : 0;
+	line-height     : 1;
 	border          : none;
 	outline         : none;
 	background-color: transparent;
 	opacity         : .2;
 	cursor          : pointer;
-	color           : #c8c8c8;
 	font-weight     : bold;
 }
 
 .ingredients__button--left {
-	left        : 0;
+	line-height : 0;
 	font-size   : 1.8em;
 	text-align  : left;
 	padding-left: .4em;
@@ -43,11 +52,10 @@
 }
 
 .ingredients__button--right {
-	right        : 0;
+	line-height  : 0;
 	font-size    : 2.4em;
 	text-align   : right;
 	padding-right: .4em;
-	margin-top   : -3px;
 	color        : red;
 }
 
@@ -73,7 +81,7 @@
 	pointer-events: none;
 }
 
-.ingredients-list__type-item {
+.ingredientsList__type-item {
 	margin        : 20px 0;
 	font-size     : 18px;
 	text-transform: capitalize;
