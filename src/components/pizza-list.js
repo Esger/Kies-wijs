@@ -122,7 +122,7 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 19,
 				"sortingWeight": 0,
-				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'burgerraden', 'correctief referendum', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "LP (Libertaire Partij)",
 				"gewicht": "1.00",

@@ -9,12 +9,13 @@ export class IngredientsListCustomElement {
 		this.ingredients = [
 			{
 				"name": "burgerraden",
+				"text": "Systeem waarbij burgers meer directe invloed hebben op beleid.",
 				"pref": 0
 			},
-			{
-				"name": "corona",
-				"pref": 0
-			},
+			// {
+			// 	"name": "corona",
+			// 	"pref": 0
+			// },
 			{
 				"name": "Belastingvoordeel huishoudens",
 				"text": "Huishoudens met twee partners waarvan er één werkt, moeten net zoveel belastingvoordeel krijgen als huishoudens met twee werkende partners.",
@@ -126,10 +127,10 @@ export class IngredientsListCustomElement {
 				"text": "Er moet minder geld naar de publieke omroep.",
 				"pref": 0
 			},
-			{
-				"name": "racisme & discriminatie",
-				"pref": 0
-			},
+			// {
+			// 	"name": "racisme & discriminatie",
+			// 	"pref": 0
+			// },
 			{
 				"name": "rekeningrijden",
 				"text": "In plaats van de belasting op autobezit met er voor automobilisten een belasting komen per gereden kilometer.",

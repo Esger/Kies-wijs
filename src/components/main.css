@@ -31,12 +31,14 @@ html {
 }
 
 body {
-	display         : flex;
-	flex-direction  : column;
-	align-items     : stretch;
-	overflow        : hidden;
-	background-color: #91d370;
-	background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+	display            : flex;
+	flex-direction     : column;
+	align-items        : stretch;
+	overflow           : hidden;
+	background         : #00d2ff;
+	background         : linear-gradient(to top, #3a7bd5, #00d2ff);
+	/* background-color: #91d370;
+	background-image   : linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%); */
 }
 
 header,
@@ -63,7 +65,7 @@ h2 {
 	font-weight: normal;
 	font-style : italic;
 	line-height: 1;
-	color      : indianred;
+	color      : black;
 }
 
 p {
@@ -71,7 +73,8 @@ p {
 }
 
 h4 {
-	color: steelblue;
+	color  : steelblue;
+	display: flex;
 }
 
 li[class*=hint--]::after {

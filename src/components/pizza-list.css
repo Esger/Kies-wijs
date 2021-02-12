@@ -19,11 +19,12 @@
 }
 
 .partyList__item--number {
-	position: absolute;
+	text-align: right;
+	flex      : 0 0 10%;
 }
 
 .partyList__item--title {
-	margin-left: 30px;
+	margin-left: 16px;
 }
 
 @media screen and (max-width: 600px) {
