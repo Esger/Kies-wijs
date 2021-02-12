@@ -11,13 +11,6 @@
 	position: relative;
 }
 
-.ingredientsList [class*=hint--]::after {
-	max-width  : 100%;
-	white-space: pre-wrap;
-	width      : max-content;
-	line-height: 1.6;
-}
-
 .ingredients__buttonGroup {
 	position        : relative;
 	display         : flex;

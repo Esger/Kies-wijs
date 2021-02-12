@@ -8,8 +8,10 @@
 }
 
 .partyList__item {
+	display  : block;
 	position : relative;
-	font-size: 1em;
+	font-size: 0.8em;
+	cursor   : pointer;
 }
 
 .partyList__item+.partyList__item {
@@ -24,14 +26,6 @@
 	margin-left: 30px;
 }
 
-.partyList__item--ingredients {
-	margin        : 3px 0 0 30px;
-	font-family   : palatino, cursive;
-	font-style    : italic;
-	font-size     : .7em;
-	text-transform: capitalize;
-}
-
 @media screen and (max-width: 600px) {
 	.partyList__item+.partyList__item {
 		margin-top: 10px;
@@ -40,9 +34,4 @@
 	.partyList__item--title {
 		margin-left: 24px;
 	}
-
-	.partyList__item--ingredients {
-		margin: 3px 0 0 24px;
-
-			{}
-	}
+}

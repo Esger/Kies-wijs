@@ -13,68 +13,68 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 1,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven',]
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', '~legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
 			},
 			{
 				"naam": "PVV (Partij voor de Vrijheid)",
 				"gewicht": "1.00",
 				"nummer": 2,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'sociale huurwoningen',]
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', '~voltooid leven',]
 			}, {
 				"naam": "CDA",
 				"gewicht": "1.00",
 				"nummer": 3,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'middenschool', 'religieus']
+				"ingredienten": ['boerenbedrijven', 'middenschool', 'nederlandstalig hoger onderwijs', 'religieus']
 			}, {
 				"naam": "D66",
 				"gewicht": "1.00",
 				"nummer": 4,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "GROENLINKS",
 				"gewicht": "1.00",
 				"nummer": 5,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "SP (Socialistische Partij) ",
 				"gewicht": "1.00",
 				"nummer": 6,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', '~nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen']
 			}, {
 				"naam": "Partij van de Arbeid (P.v.d.A.)",
 				"gewicht": "1.00",
 				"nummer": 7,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "ChristenUnie",
 				"gewicht": "1.00",
 				"nummer": 8,
 				"sortingWeight": 0,
-				"ingredienten": ['~boerenbedrijven', 'sociale huurwoningen', 'religieus', 'vluchtelingen opnemen']
+				"ingredienten": ['~boerenbedrijven', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'religieus', 'vluchtelingen opnemen']
 			}, {
 				"naam": "Partij voor de Dieren",
 				"gewicht": "1.00",
 				"nummer": 9,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'mondkapjesplicht', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "50PLUS",
 				"gewicht": "1.00",
 				"nummer": 10,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen',]
+				"ingredienten": ['legalisering softdrugs', 'koppeling minimumloon en bijstand', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'voltooid leven',]
 			}, {
 				"naam": "Staatkundig Gereformeerde Partij (SGP)",
 				"gewicht": "1.00",
 				"nummer": 11,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'mondkapjesplicht', 'religieus']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', '~sociale huurwoningen', 'mondkapjesplicht', 'religieus']
 			}, {
 				"naam": "DENK",
 				"gewicht": "1.00",
@@ -86,31 +86,31 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 13,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs',]
 			}, {
 				"naam": "BIJ1",
 				"gewicht": "1.00",
 				"nummer": 14,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "JA21",
 				"gewicht": "1.00",
 				"nummer": 15,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', '~mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', '~mondkapjesplicht', 'nederlandstalig hoger onderwijs',]
 			}, {
 				"naam": "CODE ORANJE",
 				"gewicht": "1.00",
 				"nummer": 16,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'sociale huurwoningen', 'mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'sociale huurwoningen', 'mondkapjesplicht', 'voltooid leven',]
 			}, {
 				"naam": "Volt",
 				"gewicht": "1.00",
 				"nummer": 17,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "NIDA",
 				"gewicht": "1.00",
@@ -122,55 +122,55 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 19,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'voltooid leven',]
 			}, {
 				"naam": "LP (Libertaire Partij)",
 				"gewicht": "1.00",
 				"nummer": 20,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', '~koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'voltooid leven',]
 			}, {
 				"naam": "JONG",
 				"gewicht": "1.00",
 				"nummer": 21,
 				"sortingWeight": 0,
-				"ingredienten": ['sociale huurwoningen',]
+				"ingredienten": ['legalisering softdrugs', 'sociale huurwoningen', 'voltooid leven',]
 			}, {
 				"naam": "Splinter",
 				"gewicht": "1.00",
 				"nummer": 22,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'mondkapjesplicht']
+				"ingredienten": ['legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
 			}, {
 				"naam": "BoerBurgerBeweging",
 				"gewicht": "1.00",
 				"nummer": 23,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'middenschool', 'mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
 			}, {
 				"naam": "NLBeter",
 				"gewicht": "1.00",
 				"nummer": 24,
 				"sortingWeight": 0,
-				"ingredienten": ['sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['koppeling minimumloon en bijstand', 'legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen']
 			}, {
 				"naam": "Lijst Henk Krol",
 				"gewicht": "1.00",
 				"nummer": 25,
 				"sortingWeight": 0,
-				"ingredienten": ['mondkapjesplicht']
+				"ingredienten": ['legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
 			}, {
 				"naam": "OPRECHT",
 				"gewicht": "1.00",
 				"nummer": 26,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'sociale huurwoningen', '~middenschool', 'mondkapjesplicht']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'sociale huurwoningen', '~middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', '~voltooid leven',]
 			}, {
 				"naam": "JEZUS LEEFT",
 				"gewicht": "1.00",
 				"nummer": 27,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'middenschool', 'mondkapjesplicht', 'religieus']
+				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'religieus']
 			}, {
 				"naam": "Trots op Nederland (TROTS)",
 				"gewicht": "1.00",
@@ -268,4 +268,12 @@ export class PizzaListCustomElement {
 		}, 0);
 	}
 
+}
+
+export class IngredientenLijstValueConverter {
+	toView(array) {
+		// const filteredArray = array
+		const theString = array.filter(item => !item.includes('~')).join(', ');
+		return theString;
+	}
 }

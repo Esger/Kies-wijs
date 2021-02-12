@@ -74,6 +74,13 @@ h4 {
 	color: steelblue;
 }
 
+li[class*=hint--]::after {
+	max-width  : 100%;
+	white-space: pre-wrap;
+	width      : max-content;
+	line-height: 1.6;
+}
+
 /*------------------------------------*\
 #HELPERS
 \*------------------------------------*/
