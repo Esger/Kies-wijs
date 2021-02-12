@@ -2,11 +2,15 @@
 	<require from="components/ingredients-list.css"></require>
 	<require from="resources/value-converters/sort-value-converter"></require>
 	<ul class="ingredients-list">
-		<li repeat.for="ingredient of ingredients" class="">
-			<button-group class="ingredients__buttonGroup" class.bind="ingredient.type" class="clearfix">
-				<button class="ingredients__button--right" click.trigger="dislikeIngredient(ingredient)" disabled.bind="ingredient.pref < 0">&times;</button>
+		<li repeat.for="ingredient of ingredients"
+			class="">
+			<button-group class="ingredients__buttonGroup"
+						  class.bind="ingredient.type"
+						  class="clearfix">
 				<button class="ingredients__button--left" click.trigger="likeIngredient(ingredient)" disabled.bind="ingredient.pref > 0">&check;</button>
-				<div class="ingredients__label">${ingredient.name}</div>
+				<div class="ingredients__label"
+					 title="ingredient.text">${ingredient.name}</div>
+				<button class="ingredients__button--right" click.trigger="dislikeIngredient(ingredient)" disabled.bind="ingredient.pref < 0">&times;</button>
 			</button-group>
 		</li>
 	</ul>
