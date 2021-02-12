@@ -7,6 +7,6 @@ export class App {
 
   reset() {
     this.ingredientsViewModel.resetIngredients();
-    this.pizzasViewModel.resetPizzas();
+    this.partiesViewModel.resetPizzas();
   }
 }

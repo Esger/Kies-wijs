@@ -7,7 +7,7 @@ export class PizzaListCustomElement {
 	constructor(eventAggregator) {
 		this.ea = eventAggregator;
 		this.showList = false;
-		this.pizzas = [
+		this.parties = [
 			{
 				"naam": "VVD",
 				"gewicht": "1.00",
@@ -122,7 +122,7 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 20,
 				"sortingWeight": 0,
-				"ingredienten": []
+				"ingredienten": ['mondkapjesplicht']
 			}, {
 				"naam": "JONG",
 				"gewicht": "1.00",
@@ -134,13 +134,13 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 22,
 				"sortingWeight": 0,
-				"ingredienten": []
+				"ingredienten": ['mondkapjesplicht']
 			}, {
-				"naam": "BBB",
+				"naam": "BoerBurgerBeweging",
 				"gewicht": "1.00",
 				"nummer": 23,
 				"sortingWeight": 0,
-				"ingredienten": []
+				"ingredienten": ['mondkapjesplicht']
 			}, {
 				"naam": "NLBeter",
 				"gewicht": "1.00",
@@ -152,19 +152,19 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 25,
 				"sortingWeight": 0,
-				"ingredienten": []
+				"ingredienten": ['mondkapjesplicht']
 			}, {
 				"naam": "OPRECHT",
 				"gewicht": "1.00",
 				"nummer": 26,
 				"sortingWeight": 0,
-				"ingredienten": []
+				"ingredienten": ['mondkapjesplicht']
 			}, {
 				"naam": "JEZUS LEEFT",
 				"gewicht": "1.00",
 				"nummer": 27,
 				"sortingWeight": 0,
-				"ingredienten": ['religieus']
+				"ingredienten": ['mondkapjesplicht', 'religieus']
 			}, {
 				"naam": "Trots op Nederland (TROTS)",
 				"gewicht": "1.00",
@@ -246,9 +246,9 @@ export class PizzaListCustomElement {
 
 	updatePreferences(ingredient, d) {
 		this.showList = !this.showList;
-		for (let pizza of this.pizzas) {
-			if (pizza.ingredienten.includes(ingredient.name.toLowerCase())) {
-				pizza.sortingWeight += d;
+		for (let party of this.parties) {
+			if (party.ingredienten.includes(ingredient.name.toLowerCase())) {
+				party.sortingWeight += d;
 			}
 		}
 		setTimeout(() => {

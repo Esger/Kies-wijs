@@ -1,16 +1,16 @@
 <template>
 	<require from="components/pizza-list.css"></require>
 	<require from="resources/value-converters/sort-value-converter"></require>
-	<ul class="pizza-list"
+	<ul class="partyList"
 		if.bind="showList">
-		<template repeat.for="pizza of pizzas | sort: { propertyName: 'sortingWeight', direction: 'descending', propertyName2 : 'naam', direction2: 'ascending' }">
-			<li class="pizza-list__item"
-				data-sorting-weight.bind="pizza.sortingWeight">
-				<h4><span class="pizza-list__item__number">${pizza.nummer}</span>
-					<div class="pizza-list__item__title">${pizza.naam}</div>
+		<template repeat.for="party of parties | sort: { propertyName: 'sortingWeight', direction: 'descending', propertyName2 : 'naam', direction2: 'ascending' }">
+			<li class="partyList__item"
+				data-sorting-weight.bind="party.sortingWeight">
+				<h4><span class="partyList__item--number">${party.nummer}</span>
+					<div class="partyList__item--title">${party.naam}</div>
 				</h4>
-				<p class="pizza-list__item__ingredients">
-					<span repeat.for="ingredient of pizza.ingredienten">${ingredient}${!$last ? ', ' : ''}</span>
+				<p class="partyList__item--ingredients">
+					<span repeat.for="ingredient of party.ingredienten">${ingredient}${!$last ? ', ' : ''}</span>
 				</p>
 			</li>
 		</template>
