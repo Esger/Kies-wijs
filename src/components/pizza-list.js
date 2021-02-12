@@ -13,164 +13,164 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 1,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', '~legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
+				"ingredienten": ['boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', '~inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', '~legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vaccinatiebewijs', 'volkshuisvesting', 'voltooid leven', 'vuurwerk',]
 			},
 			{
 				"naam": "PVV (Partij voor de Vrijheid)",
 				"gewicht": "1.00",
 				"nummer": 2,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', '~voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'europese unie verlaten', 'gevangenisstraffen', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'sociale huurwoningen', 'volkshuisvesting', '~voltooid leven', 'vuurwerk', '~woningen op landbouwgrond', '~zorgfonds',]
 			}, {
 				"naam": "CDA",
 				"gewicht": "1.00",
 				"nummer": 3,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'middenschool', 'nederlandstalig hoger onderwijs', 'religieus']
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inkomen leraren', 'inburgering op locatie', 'kerncentrale', 'middenschool', 'nederlandstalig hoger onderwijs', 'religieus', 'volkshuisvesting', 'vuurwerk', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "D66",
 				"gewicht": "1.00",
 				"nummer": 4,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['correctief referendum', 'btw op kunst en cultuur', 'defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "GROENLINKS",
 				"gewicht": "1.00",
 				"nummer": 5,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', '~woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "SP (Socialistische Partij) ",
 				"gewicht": "1.00",
 				"nummer": 6,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', '~nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', '~nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', '~volkshuisvesting', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "Partij van de Arbeid (P.v.d.A.)",
 				"gewicht": "1.00",
 				"nummer": 7,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "ChristenUnie",
 				"gewicht": "1.00",
 				"nummer": 8,
 				"sortingWeight": 0,
-				"ingredienten": ['~boerenbedrijven', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'religieus', 'vluchtelingen opnemen']
+				"ingredienten": ['belastingvoordeel huishoudens', 'correctief referendum', '~boerenbedrijven', 'defensiebudget', 'excuses slavenhandel', '~gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'religieus', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "Partij voor de Dieren",
 				"gewicht": "1.00",
 				"nummer": 9,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'correctief referendum', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "50PLUS",
 				"gewicht": "1.00",
 				"nummer": 10,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'koppeling minimumloon en bijstand', 'middenschool', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'voltooid leven',]
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'legalisering softdrugs', 'kerncentrale', 'koppeling minimumloon en bijstand', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "Staatkundig Gereformeerde Partij (SGP)",
 				"gewicht": "1.00",
 				"nummer": 11,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', '~sociale huurwoningen', 'mondkapjesplicht', 'religieus']
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'rekeningrijden', '~sociale huurwoningen', 'mondkapjesplicht', 'religieus', 'vliegbelasting', '~woningen op landbouwgrond',]
 			}, {
 				"naam": "DENK",
 				"gewicht": "1.00",
 				"nummer": 12,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'mondkapjesplicht', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'gezichtsbedekkende kleding', '~gratis kinderopvang', 'excuses slavenhandel', 'inkomen leraren', 'middenschool', 'mondkapjesplicht', 'publieke omroep', 'rekeningrijden', 'sociale huurwoningen', 'vluchtelingen opnemen', 'volkshuisvesting', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "Forum voor Democratie",
 				"gewicht": "1.00",
 				"nummer": 13,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'europese unie verlaten', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'vuurwerk',]
 			}, {
 				"naam": "BIJ1",
 				"gewicht": "1.00",
 				"nummer": 14,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'zorgfonds',]
 			}, {
 				"naam": "JA21",
 				"gewicht": "1.00",
 				"nummer": 15,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', '~mondkapjesplicht', 'nederlandstalig hoger onderwijs',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', '~mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vuurwerk', '~woningen op landbouwgrond',]
 			}, {
 				"naam": "CODE ORANJE",
 				"gewicht": "1.00",
 				"nummer": 16,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'sociale huurwoningen', 'mondkapjesplicht', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', '~europese unie verlaten', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'publieke omroep', 'sociale huurwoningen', 'mondkapjesplicht', 'voltooid leven', 'vuurwerk', 'zorgfonds',]
 			}, {
 				"naam": "Volt",
 				"gewicht": "1.00",
 				"nummer": 17,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['btw op kunst en cultuur', 'defensiebudget', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', '~inkomen leraren', 'kerncentrale', 'legalisering softdrugs', 'middenschool', 'rekeningrijden', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "NIDA",
 				"gewicht": "1.00",
 				"nummer": 18,
 				"sortingWeight": 0,
-				"ingredienten": ['middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen']
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'middenschool', 'rekeningrijden', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'zorgfonds',]
 			}, {
 				"naam": "Piratenpartij",
 				"gewicht": "1.00",
 				"nummer": 19,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "LP (Libertaire Partij)",
 				"gewicht": "1.00",
 				"nummer": 20,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', '~koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', '~defensiebudget', '~europese unie verlaten', 'gezichtsbedekkende kleding', '~inburgering op locatie', 'kerncentrale', '~koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'publieke omroep', 'rekeningrijden', 'vaccinatiebewijs', 'voltooid leven', 'vuurwerk', '~woningen op landbouwgrond',]
 			}, {
 				"naam": "JONG",
 				"gewicht": "1.00",
 				"nummer": 21,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'sociale huurwoningen', 'voltooid leven',]
+				"ingredienten": ['correctief referendum', '~defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'legalisering softdrugs', '~publieke omroep', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'voltooid leven', 'zorgfonds',]
 			}, {
 				"naam": "Splinter",
 				"gewicht": "1.00",
 				"nummer": 22,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'vleesbelasting', 'vliegbelasting', 'voltooid leven', 'woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "BoerBurgerBeweging",
 				"gewicht": "1.00",
 				"nummer": 23,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
+				"ingredienten": ['btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'vliegbelasting', 'voltooid leven', 'vuurwerk', 'zorgfonds',]
 			}, {
 				"naam": "NLBeter",
 				"gewicht": "1.00",
 				"nummer": 24,
 				"sortingWeight": 0,
-				"ingredienten": ['koppeling minimumloon en bijstand', 'legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen']
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'zorgfonds',]
 			}, {
 				"naam": "Lijst Henk Krol",
 				"gewicht": "1.00",
 				"nummer": 25,
 				"sortingWeight": 0,
-				"ingredienten": ['legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', '~volkshuisvesting', 'voltooid leven', '~vuurwerk', 'zorgfonds',]
 			}, {
 				"naam": "OPRECHT",
 				"gewicht": "1.00",
 				"nummer": 26,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'sociale huurwoningen', '~middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', '~voltooid leven',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', '~middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vliegbelasting', '~volkshuisvesting', '~voltooid leven', 'vuurwerk', '~woningen op landbouwgrond', 'zorgfonds',]
 			}, {
 				"naam": "JEZUS LEEFT",
 				"gewicht": "1.00",
 				"nummer": 27,
 				"sortingWeight": 0,
-				"ingredienten": ['boerenbedrijven', 'koppeling minimumloon en bijstand', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'religieus']
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'europese unie verlaten', '~inburgering op locatie', 'koppeling minimumloon en bijstand', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'religieus', 'rekeningrijden', 'vliegbelasting', 'woningen op landbouwgrond',]
 			}, {
 				"naam": "Trots op Nederland (TROTS)",
 				"gewicht": "1.00",
@@ -272,7 +272,6 @@ export class PizzaListCustomElement {
 
 export class IngredientenLijstValueConverter {
 	toView(array) {
-		// const filteredArray = array
 		const theString = array.filter(item => !item.includes('~')).join(', ');
 		return theString;
 	}

@@ -61,6 +61,11 @@ export class IngredientsListCustomElement {
 				"pref": 0
 			},
 			{
+				"name": "Gratis kinderopvang",
+				"text": "Kinderopvang moet voor alle ouders ten minste drie dagen in de week gratis worden.",
+				"pref": 0
+			},
+			{
 				"name": "Inburgering op locatie",
 				"text": "Asielzoekers met een voorlopige verblijfsvergunning moeten eerst inburgeren voordat zij een huurwoning krijgen.",
 				"pref": 0
@@ -75,27 +80,22 @@ export class IngredientsListCustomElement {
 				"text": "Nederland moet een nieuwe kerncentrale bouwen.",
 				"pref": 0
 			},
-			{
-				"name": "klimaat",
-				"pref": 0
-			},
-			{
-				"name": "koningshuis",
-				"pref": 0
-			},
-			{
-				"name": "koopkracht",
-				"pref": 0
-			},
-			{
-				"name": "onderwijs",
-				"pref": 0
-			},
-			{
-				"name": "Gratis kinderopvang",
-				"text": "Kinderopvang moet voor alle ouders ten minste drie dagen in de week gratis worden.",
-				"pref": 0
-			},
+			// {
+			// 	"name": "klimaat",
+			// 	"pref": 0
+			// },
+			// {
+			// 	"name": "koningshuis",
+			// 	"pref": 0
+			// },
+			// {
+			// 	"name": "koopkracht",
+			// 	"pref": 0
+			// },
+			// {
+			// 	"name": "onderwijs",
+			// 	"pref": 0
+			// },
 			{
 				"name": "Koppeling minimumloon en bijstand",
 				"text": "Verhoging van de minimumlonen moet niet langer automatisch leiden tot verhoging van de bijstandsuitkeringen.",
@@ -137,6 +137,7 @@ export class IngredientsListCustomElement {
 			},
 			{
 				"name": "religieus",
+				"text": "Partij met religieuze achtergrond",
 				"pref": 0
 			},
 			{
@@ -144,10 +145,10 @@ export class IngredientsListCustomElement {
 				"text": "Nieuwbouwwijken moeten voor ten minste 40 procent bestaan uit sociale huurwoningen.",
 				"pref": 0
 			},
-			{
-				"name": "transparante overheid",
-				"pref": 0
-			},
+			// {
+			// 	"name": "transparante overheid",
+			// 	"pref": 0
+			// },
 			{
 				"name": "vleesbelasting",
 				"text": "Er moet een extra belasting komen op het kopen van vlees.",
@@ -174,15 +175,6 @@ export class IngredientsListCustomElement {
 				"pref": 0
 			},
 			{
-				"name": "werkgelegenheid",
-				"pref": 0
-			},
-			{
-				"name": "Woningen op landbouwgrond",
-				"text": "Er moeten woningen worden gebouwd op grond die nu voor landbouw wordt gebruikt.",
-				"pref": 0
-			},
-			{
 				"name": "Vaccinatiebewijs",
 				"text": "Organisatoren van evenementen moeten bij de toegang een vaccinatiebewijs kunnen vragen.",
 				"pref": 0
@@ -192,18 +184,27 @@ export class IngredientsListCustomElement {
 				"text": "In plaats van provincies en gemeenten moet de landelijke overheid weer beslissen waar nieuwe woonwijken worden gebouwd.",
 				"pref": 0
 			},
+			// {
+			// 	"name": "veiligheid",
+			// 	"pref": 0
+			// },
+			// {
+			// 	"name": "werkgelegenheid",
+			// 	"pref": 0
+			// },
+			// {
+			// 	"name": "windmolens",
+			// 	"pref": 0
+			// },
 			{
-				"name": "veiligheid",
+				"name": "Woningen op landbouwgrond",
+				"text": "Er moeten woningen worden gebouwd op grond die nu voor landbouw wordt gebruikt.",
 				"pref": 0
 			},
-			{
-				"name": "windmolens",
-				"pref": 0
-			},
-			{
-				"name": "zonnepanelen",
-				"pref": 0
-			},
+			// {
+			// 	"name": "zonnepanelen",
+			// 	"pref": 0
+			// },
 			{
 				"name": "zorgfonds",
 				"text": "In plaat van commerciële zorgverzekeraars met er een landelijk zorgfonds komen voor iedereen.",
