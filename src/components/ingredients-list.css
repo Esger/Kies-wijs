@@ -5,97 +5,93 @@
 .ingredients-list {
   list-style-type: none;
 }
-.ingredients__buttonGroup{
-    position: relative;
-    display: block;
-    border: 1px solid #e8e8e8;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border-radius: 4px;
+
+.ingredients__buttonGroup {
+  position        : relative;
+  display         : block;
+  border          : 1px solid #e8e8e8;
+  margin-bottom   : 10px;
+  background-color: whitesmoke;
+  border-radius   : 4px;
 }
-.ingredients__buttonGroup.kaas{
-    background-color: cornsilk;
+
+[class^=ingredients__button--] {
+  position: absolute;
+  ;
+  display         : block;
+  width           : 40%;
+  z-index         : 0;
+  height          : 100%;
+  line-height     : 0;
+  border          : none;
+  outline         : none;
+  background-color: transparent;
+  opacity         : .2;
+  cursor          : pointer;
+  color           : #c8c8c8;
+  font-weight     : bold;
 }
-.ingredients__buttonGroup.vlees{
-    background-color: papayawhip;
+
+.ingredients__button--left {
+  left        : 0;
+  font-size   : 1.8em;
+  text-align  : left;
+  padding-left: .4em;
+  color       : green;
 }
-.ingredients__buttonGroup.vis{
-    background-color: cornsilk;
+
+.ingredients__button--right {
+  right        : 0;
+  font-size    : 2.4em;
+  text-align   : right;
+  padding-right: .4em;
+  margin-top   : -3px;
+  color        : red;
 }
-.ingredients__buttonGroup.groente{
-    background-color: honeydew;
+
+[class^=ingredients__button--][disabled] {
+  opacity: 1;
+  cursor : auto;
 }
-.ingredients__buttonGroup.fruit{
-    background-color: lemonchiffon;
+
+.ingredients__label {
+  margin        : 5px 0;
+  font-family   : palatino, cursive;
+  font-style    : italic;
+  font-size     : .9em;
+  line-height   : 28px;
+  letter-spacing: 1px;
+  text-align    : center;
+  color         : cadetblue;
+  opacity       : 1;
+  text-shadow   : 0 1px 1px #D9D9D9;
+  width         : 100%;
+  z-index       : 0;
+  pointer-events: none;
 }
-[class^=ingredients__button--]{
-    position: absolute;;
-    display: block;
-    width: 40%;
-    z-index: 0;
-    height: 100%;
-    line-height: 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    opacity: .2;
-    cursor: pointer;
-    color: #c8c8c8;
-    font-weight: bold;
-}
-.ingredients__button--left{
-    left: 0;
-    font-size: 1.8em;
-    text-align: left;
-    padding-left: .4em;
-    color: green;
-}
-.ingredients__button--right{
-    right: 0;
-    font-size: 2.4em;
-    text-align: right;
-    padding-right: .4em;
-    margin-top: -3px;
-    color: red;
-}
-[class^=ingredients__button--][disabled]{
-    opacity: 1;
-    cursor: auto;
-}
-.ingredients__label{
-    margin: 5px 0;
-    font-family: palatino, cursive;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.1em;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #333;
-    opacity: 1;
-    text-shadow: 0 1px 1px #D9D9D9;
-    width: 100%;
-    z-index: 0;
-    pointer-events: none;
-}
+
 .ingredients-list__type-item {
-    margin: 20px 0;
-    font-size: 18px;
-    text-transform: capitalize;
-    text-align: right;
+  margin        : 20px 0;
+  font-size     : 18px;
+  text-transform: capitalize;
+  text-align    : right;
 }
+
 @media screen and (max-width: 600px) {
-    .ingredients__label {
-        line-height: 18px;
-        letter-spacing: 0;
-    }
-    [class^=ingredients__button--]{
-        opacity: .2;
-    }
-    .ingredients__button--left {
-        padding-left: 5px;
-    }
-    .ingredients__button--right {
-        padding-right: 5px;
-    }
+  .ingredients__label {
+    line-height   : 18px;
+    letter-spacing: 0;
+  }
+
+  [class^=ingredients__button--] {
+    opacity: .2;
+  }
+
+  .ingredients__button--left {
+    padding-left: 5px;
+  }
+
+  .ingredients__button--right {
+    padding-right: 5px;
+  }
 }
