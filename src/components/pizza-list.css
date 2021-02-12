@@ -24,15 +24,12 @@
 }
 
 .partyList__item--title {
-	margin-left: 16px;
+	margin-left: 3vw;
+	word-break : break-word;
 }
 
 @media screen and (max-width: 600px) {
 	.partyList__item+.partyList__item {
 		margin-top: 10px;
-	}
-
-	.partyList__item--title {
-		margin-left: 24px;
 	}
 }
