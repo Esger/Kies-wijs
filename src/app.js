@@ -1,6 +1,6 @@
 export class App {
 	constructor() {
-		this.title = 'PartijenKiezer';
+		this.title = 'Partijenkiezer 2021';
 		this.subtitle = 'Kies ja of nee hiernaast';
 		this.ingredientsTitle = 'Wijs een thema aan';
 	}

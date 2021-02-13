@@ -57,12 +57,13 @@
 }
 
 .ingredients__button--right:disabled {
-	color: red;
+	color      : red;
+	text-shadow: 0 0 2px red;
 }
 
 .ingredients__button--left:disabled {
 	color      : #43a047;
-	text-shadow: 0 0 1px #43a047;
+	text-shadow: 0 0 3px #43a047;
 }
 
 [class^=ingredients__button--]:disabled {
