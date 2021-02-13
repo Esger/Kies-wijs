@@ -8,9 +8,9 @@
 			<button-group class="ingredients__buttonGroup"
 						  class.bind="ingredient.type"
 						  class="">
-				<button class="ingredients__button--left" click.trigger="likeIngredient(ingredient)" disabled.bind="ingredient.pref > 0">&check;</button>
+				<button class="ingredients__button--left" click.trigger="likeIngredient(ingredient)" disabled.bind="ingredient.pref > 0">J</button>
 				<div class="ingredients__label">${ingredient.name}</div>
-				<button class="ingredients__button--right" click.trigger="dislikeIngredient(ingredient)" disabled.bind="ingredient.pref < 0">&times;</button>
+				<button class="ingredients__button--right" click.trigger="dislikeIngredient(ingredient)" disabled.bind="ingredient.pref < 0">N</button>
 			</button-group>
 		</li>
 	</ul>
