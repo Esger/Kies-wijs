@@ -15,7 +15,7 @@ export class ConfettiCustomAttribute {
 		this._element.removeEventListener();
 	}
 	confetti(event) {
-		event.preventDefault();
+		// event.preventDefault();
 		//reset animation
 		event.target.classList.remove('animate');
 
