@@ -116,7 +116,7 @@ export class PizzaListCustomElement {
 				"gewicht": "1.00",
 				"nummer": 18,
 				"sortingWeight": 0,
-				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'middenschool', 'rekeningrijden', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'zorgfonds',]
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'middenschool', 'rekeningrijden', 'religieus', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'zorgfonds',]
 			}, {
 				"naam": "Piratenpartij",
 				"gewicht": "1.00",
