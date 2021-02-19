@@ -1,42 +1,35 @@
 /*------------------------------------*\
-  #PIZZA-LIST-ITEMS
+  #partyList-ITEMS
 \*------------------------------------*/
 
-.pizza-list {
-    list-style-type: none;
-    padding-left: 0;
+.partyList {
+	list-style-type: none;
+	padding-left   : 0;
 }
 
-.pizza-list__item {
-    position: relative;
-    font-size: 1em;
-}
-.pizza-list__item + .pizza-list__item{
-    margin-top: 20px;
-}
-.pizza-list__item__number {
-    position: absolute;
+.partyList__item {
+	display  : block;
+	position : relative;
+	font-size: 0.8em;
+	cursor   : pointer;
 }
 
-.pizza-list__item__title {
-    margin-left: 30px;
+.partyList__item+.partyList__item {
+	margin-top: 20px;
 }
 
-.pizza-list__item__ingredients {
-    margin: 3px 0 0 30px;
-    font-family: palatino, cursive;
-    font-style: italic;
-    font-size: .9em;
-    text-transform: capitalize;
+.partyList__item--number {
+	text-align: right;
+	flex      : 0 0 10%;
 }
+
+.partyList__item--title {
+	margin-left: 3vw;
+	word-break : break-word;
+}
+
 @media screen and (max-width: 600px) {
-    .pizza-list__item + .pizza-list__item {
-        margin-top :10px;
-    }
-    .pizza-list__item__title {
-        margin-left: 24px;
-    }
-    .pizza-list__item__ingredients {
-        margin: 3px 0 0 24px; {
-    }
+	.partyList__item+.partyList__item {
+		margin-top: 10px;
+	}
 }

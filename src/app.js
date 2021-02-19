@@ -1,12 +1,12 @@
 export class App {
-  constructor() {
-    this.title = 'PartijKiezer';
-    this.subtitle = 'De beste partijen voor jou!';
-    this.ingredientsTitle = 'Wat wil je (niet) ?';
-  }
+	constructor() {
+		this.title = 'Partijenkiezer 2021';
+		this.subtitle = 'Kies ja of nee hiernaast';
+		this.ingredientsTitle = 'Wijs een thema aan';
+	}
 
-  reset() {
-    this.ingredientsViewModel.resetIngredients();
-    this.pizzasViewModel.resetPizzas();
-  }
+	reset() {
+		this.ingredientsViewModel.resetIngredients();
+		this.partiesViewModel.resetPizzas();
+	}
 }

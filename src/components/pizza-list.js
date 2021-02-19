@@ -4,329 +4,275 @@ import { EventAggregator } from "aurelia-event-aggregator";
 @inject(EventAggregator)
 export class PizzaListCustomElement {
 
-    constructor(eventAggregator) {
-        this.ea = eventAggregator;
-        this.showList = true;
-        this.pizzas = [
-            {
-                "naam": "VVD",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.00",
-                "nummer": 1,
-                "sortingWeight": 0,
-                "ingredienten": "ansjovis, kappertjes, tomaten, kaas"
-            }, {
-                "naam": "PVV (Partij voor de Vrijheid)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.00",
-                "nummer": 2,
-                "sortingWeight": 0,
-                "ingredienten": "salami, tomaten, kaas"
-            }, {
-                "naam": "CDA",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.00",
-                "nummer": 3,
-                "sortingWeight": 0,
-                "ingredienten": "religieus"
-            }, {
-                "naam": "D66",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "6.00",
-                "nummer": 4,
-                "sortingWeight": 0,
-                "ingredienten": "champignons, tomaten, kaas"
-            }, {
-                "naam": "GROENLINKS",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.50",
-                "nummer": 5,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, ansjovis, champignons, kappertjes, olijven, tomaten, kaas"
-            }, {
-                "naam": "Partij van de Arbeid (P.v.d.A.)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.50",
-                "nummer": 7,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, garnalen, zalm, champignons, tomaten, kaas"
-            }, {
-                "naam": "ChristenUnie",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 8,
-                "sortingWeight": 0,
-                "ingredienten": "religieus"
-            }, {
-                "naam": "Partij voor de Dieren",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 9,
-                "sortingWeight": 0,
-                "ingredienten": "champignons, paprika, spaanse pepers, tomaten, uien, kaas"
-            }, {
-                "naam": "50PLUS",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 10,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, garnalen, zalm, paprika, tomaten, kaas"
-            }, {
-                "naam": "Staatkundig Gereformeerde Partij (SGP)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 11,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, tomaten, kaas"
-            }, {
-                "naam": "DENK",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "9.75",
-                "nummer": 12,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, garnalen, zalm, champignons, olijven, paprika, tomaten, uien, kaas"
-            }, {
-                "naam": "Forum voor Democratie",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 13,
-                "sortingWeight": 0,
-                "ingredienten": "artisjokken, champignons, tomaten, uien, kaas"
-            }, {
-                "naam": "BIJ1",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 14,
-                "sortingWeight": 0,
-                "ingredienten": "garnalen, zalm, tomaten, kaas"
-            }, {
-                "naam": "JA21",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 15,
-                "sortingWeight": 0,
-                "ingredienten": "ansjovis, garnalen, tonijn, tomaten, kaas"
-            }, {
-                "naam": "CODE ORANJE",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 16,
-                "sortingWeight": 0,
-                "ingredienten": "ham, asperges, champignons, tomaten, uien, kaas"
-            }, {
-                "naam": "Volt",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 17,
-                "sortingWeight": 0,
-                "ingredienten": "ham, champignons, paprika, tomaten, uien, kaas"
-            }, {
-                "naam": "NIDA",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.75",
-                "nummer": 18,
-                "sortingWeight": 0,
-                "ingredienten": "ham, champignons, tomaten, kaas"
-            }, {
-                "naam": "Piratenpartij",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "6.75",
-                "nummer": 19,
-                "sortingWeight": 0,
-                "ingredienten": "salami, champignons, tomaten, kaas"
-            }, {
-                "naam": "LP (Libertaire Partij)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 20,
-                "sortingWeight": 0,
-                "ingredienten": "ham, rosbief, salami, spek, tomaten, kaas"
-            }, {
-                "naam": "JONG",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.25",
-                "nummer": 21,
-                "sortingWeight": 0,
-                "ingredienten": "zeevruchten, tomaten, kaas"
-            }, {
-                "naam": "Splinter",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 22,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, ansjovis, artisjokken, spaanse pepers, tomaten, kaas"
-            }, {
-                "naam": "BBB",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 23,
-                "sortingWeight": 0,
-                "ingredienten": "ansjovis, garnalen, zalm, tomaten, kaas"
-            }, {
-                "naam": "NLBeter",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 24,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, champignons, tomaten, kaas"
-            }, {
-                "naam": "Lijst Henk Krol",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "6.75",
-                "nummer": 25,
-                "sortingWeight": 0,
-                "ingredienten": "champignons, tomaten, uien, kaas"
-            }, {
-                "naam": "OPRECHT",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 26,
-                "sortingWeight": 0,
-                "ingredienten": "salami, ansjovis, champignons, olijven, paprika, tomaten, uien, kaas"
-            }, {
-                "naam": "JEZUS LEEFT",
-                "vegetarisch": false,
-                "pikant": true,
-                "prijs": "8.50",
-                "nummer": 27,
-                "sortingWeight": 0,
-                "ingredienten": "religieus"
-            }, {
-                "naam": "Trots op Nederland (TROTS)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 28,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, spek, champignons, tomaten, uien, kaas"
-            }, {
-                "naam": "U-Buntu Connected Front",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 29,
-                "sortingWeight": 0,
-                "ingredienten": "ei, ham, tomaten, uien, kaas"
-            }, {
-                "naam": "Blanco lijst met als eerste kandidaat Zeven, A.J.L.B.",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.00",
-                "nummer": 30,
-                "sortingWeight": 0,
-                "ingredienten": "gehaktsaus, tomaten, kaas, parmezaanse kaas"
-            }, {
-                "naam": "Partij van de Eenheid",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 32,
-                "sortingWeight": 0,
-                "ingredienten": "gehaktsaus, spek, champignons, paprika, tomaten, uien, kaas, parmezaanse kaas"
-            }, {
-                "naam": "DE FEESTPARTIJ (DFP)",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 33,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, artisjokken, champignons, kappertjes, paprika, tomaten, kaas"
-            }, {
-                "naam": "Vrij en Sociaal Nederland",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "9.00",
-                "nummer": 34,
-                "sortingWeight": 0,
-                "ingredienten": "ham, salami, spek, champignons, tomaten, uien, gorgonzola, kaas"
-            }, {
-                "naam": "Wij zijn Nederland",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "9.25",
-                "nummer": 35,
-                "sortingWeight": 0,
-                "ingredienten": "gehaktsaus, ham, champignons, olijven, paprika, tomaten, gorgonzola, kaas, parmezaanse kaas"
-            }, {
-                "naam": "Modern Nederland",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 36,
-                "sortingWeight": 0,
-                "ingredienten": "tomaten, brie, gorgonzola, kaas, mozzarella"
-            }, {
-                "naam": "De Groenen",
-                "vegetarisch": true,
-                "pikant": false,
-                "prijs": "8.00",
-                "nummer": 37,
-                "sortingWeight": 0,
-                "ingredienten": "artisjokken, asperges, champignons, olijven, paprika, tomaten, uien, brie, kaas"
-            }, {
-                "naam": "Partij voor de Republiek",
-                "vegetarisch": false,
-                "pikant": false,
-                "prijs": "7.50",
-                "nummer": 38,
-                "sortingWeight": 0,
-                "ingredienten": "salami, artisjokken, asperges, olijven, tomaten, kaas"
-            }
-        ];
-        this.ea.subscribe("upPreference", response => {
-            this.updatePreferences(response, 1);
-        });
-        this.ea.subscribe("downPreference", response => {
-            this.updatePreferences(response, -1);
-        });
+	constructor(eventAggregator) {
+		this.ea = eventAggregator;
+		this.showList = false;
+		this.parties = [
+			{
+				"naam": "VVD",
+				"gewicht": "1.00",
+				"nummer": 1,
+				"sortingWeight": 0,
+				"ingredienten": ['boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', '~inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', '~legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vaccinatiebewijs', 'volkshuisvesting', 'voltooid leven', 'vuurwerk',]
+			},
+			{
+				"naam": "PVV (Partij voor de Vrijheid)",
+				"gewicht": "1.00",
+				"nummer": 2,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'europese unie verlaten', 'gevangenisstraffen', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'sociale huurwoningen', 'volkshuisvesting', '~voltooid leven', 'vuurwerk', '~woningen op landbouwgrond', '~zorgfonds',]
+			}, {
+				"naam": "CDA",
+				"gewicht": "1.00",
+				"nummer": 3,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inkomen leraren', 'inburgering op locatie', 'kerncentrale', 'middenschool', 'nederlandstalig hoger onderwijs', 'religieus', 'volkshuisvesting', 'vuurwerk', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "D66",
+				"gewicht": "1.00",
+				"nummer": 4,
+				"sortingWeight": 0,
+				"ingredienten": ['correctief referendum', 'btw op kunst en cultuur', 'defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "GROENLINKS",
+				"gewicht": "1.00",
+				"nummer": 5,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', '~woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "SP (Socialistische Partij) ",
+				"gewicht": "1.00",
+				"nummer": 6,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', '~nederlandstalig hoger onderwijs', 'sociale huurwoningen', 'vluchtelingen opnemen', '~volkshuisvesting', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "Partij van de Arbeid (P.v.d.A.)",
+				"gewicht": "1.00",
+				"nummer": 7,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "ChristenUnie",
+				"gewicht": "1.00",
+				"nummer": 8,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'correctief referendum', '~boerenbedrijven', 'defensiebudget', 'excuses slavenhandel', '~gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'religieus', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "Partij voor de Dieren",
+				"gewicht": "1.00",
+				"nummer": 9,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'correctief referendum', 'excuses slavenhandel', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "50PLUS",
+				"gewicht": "1.00",
+				"nummer": 10,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'legalisering softdrugs', 'kerncentrale', 'koppeling minimumloon en bijstand', 'middenschool', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "Staatkundig Gereformeerde Partij (SGP)",
+				"gewicht": "1.00",
+				"nummer": 11,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'defensiebudget', 'gevangenisstraffen', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'rekeningrijden', '~sociale huurwoningen', 'mondkapjesplicht', 'religieus', 'vliegbelasting', '~woningen op landbouwgrond',]
+			}, {
+				"naam": "DENK",
+				"gewicht": "1.00",
+				"nummer": 12,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'gezichtsbedekkende kleding', '~gratis kinderopvang', 'excuses slavenhandel', 'inkomen leraren', 'middenschool', 'mondkapjesplicht', 'publieke omroep', 'rekeningrijden', 'sociale huurwoningen', 'vluchtelingen opnemen', 'volkshuisvesting', 'woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "Forum voor Democratie",
+				"gewicht": "1.00",
+				"nummer": 13,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'europese unie verlaten', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'vuurwerk',]
+			}, {
+				"naam": "BIJ1",
+				"gewicht": "1.00",
+				"nummer": 14,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', 'legalisering softdrugs', 'middenschool', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'zorgfonds',]
+			}, {
+				"naam": "JA21",
+				"gewicht": "1.00",
+				"nummer": 15,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', '~mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vuurwerk', '~woningen op landbouwgrond',]
+			}, {
+				"naam": "CODE ORANJE",
+				"gewicht": "1.00",
+				"nummer": 16,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', '~europese unie verlaten', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'publieke omroep', 'sociale huurwoningen', 'mondkapjesplicht', 'voltooid leven', 'vuurwerk', 'zorgfonds',]
+			}, {
+				"naam": "Volt",
+				"gewicht": "1.00",
+				"nummer": 17,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'defensiebudget', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', '~inkomen leraren', 'kerncentrale', 'legalisering softdrugs', 'middenschool', 'rekeningrijden', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'volkshuisvesting', 'voltooid leven', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "NIDA",
+				"gewicht": "1.00",
+				"nummer": 18,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'middenschool', 'rekeningrijden', 'religieus', 'sociale huurwoningen', 'mondkapjesplicht', 'vluchtelingen opnemen', 'zorgfonds',]
+			}, {
+				"naam": "Piratenpartij",
+				"gewicht": "1.00",
+				"nummer": 19,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'burgerraden', 'correctief referendum', 'excuses slavenhandel', 'gezichtsbedekkende kleding', 'gratis kinderopvang', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'democratische vernieuwing', 'sociale huurwoningen', 'mondkapjesplicht', 'vliegbelasting', 'vluchtelingen opnemen', 'voltooid leven', 'vuurwerk', 'woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "LP (Libertaire Partij)",
+				"gewicht": "1.00",
+				"nummer": 20,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', '~defensiebudget', '~europese unie verlaten', 'gezichtsbedekkende kleding', '~inburgering op locatie', 'kerncentrale', '~koppeling minimumloon en bijstand', 'legalisering softdrugs', 'mondkapjesplicht', 'publieke omroep', 'rekeningrijden', 'vaccinatiebewijs', 'voltooid leven', 'vuurwerk', '~woningen op landbouwgrond',]
+			}, {
+				"naam": "JONG",
+				"gewicht": "1.00",
+				"nummer": 21,
+				"sortingWeight": 0,
+				"ingredienten": ['correctief referendum', '~defensiebudget', 'excuses slavenhandel', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', 'kerncentrale', 'legalisering softdrugs', '~publieke omroep', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'voltooid leven', 'zorgfonds',]
+			}, {
+				"naam": "Splinter",
+				"gewicht": "1.00",
+				"nummer": 22,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'legalisering softdrugs', 'middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'vleesbelasting', 'vliegbelasting', 'voltooid leven', 'woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "BoerBurgerBeweging",
+				"gewicht": "1.00",
+				"nummer": 23,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'vliegbelasting', 'voltooid leven', 'vuurwerk', 'zorgfonds',]
+			}, {
+				"naam": "NLBeter",
+				"gewicht": "1.00",
+				"nummer": 24,
+				"sortingWeight": 0,
+				"ingredienten": ['btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'inkomen leraren', '~kerncentrale', 'koppeling minimumloon en bijstand', 'legalisering softdrugs', 'nederlandstalig hoger onderwijs', 'rekeningrijden', 'sociale huurwoningen', 'vaccinatiebewijs', 'vleesbelasting', 'vliegbelasting', 'vluchtelingen opnemen', 'zorgfonds',]
+			}, {
+				"naam": "Lijst Henk Krol",
+				"gewicht": "1.00",
+				"nummer": 25,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'inburgering op locatie', 'kerncentrale', 'legalisering softdrugs', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', '~volkshuisvesting', 'voltooid leven', '~vuurwerk', 'zorgfonds',]
+			}, {
+				"naam": "OPRECHT",
+				"gewicht": "1.00",
+				"nummer": 26,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'defensiebudget', 'gevangenisstraffen', 'gratis kinderopvang', 'inburgering op locatie', 'kerncentrale', 'koppeling minimumloon en bijstand', '~middenschool', 'sociale huurwoningen', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', '~rekeningrijden', 'vliegbelasting', '~volkshuisvesting', '~voltooid leven', 'vuurwerk', '~woningen op landbouwgrond', 'zorgfonds',]
+			}, {
+				"naam": "JEZUS LEEFT",
+				"gewicht": "1.00",
+				"nummer": 27,
+				"sortingWeight": 0,
+				"ingredienten": ['belastingvoordeel huishoudens', 'btw op kunst en cultuur', 'boerenbedrijven', 'correctief referendum', 'europese unie verlaten', '~inburgering op locatie', 'koppeling minimumloon en bijstand', 'middenschool', 'mondkapjesplicht', 'nederlandstalig hoger onderwijs', 'publieke omroep', 'religieus', 'rekeningrijden', 'vliegbelasting', 'woningen op landbouwgrond',]
+			}, {
+				"naam": "Trots op Nederland (TROTS)",
+				"gewicht": "1.00",
+				"nummer": 28,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "U-Buntu Connected Front",
+				"gewicht": "1.00",
+				"nummer": 29,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Blanco lijst met als eerste kandidaat Zeven, A.J.L.B.",
+				"gewicht": "1.00",
+				"nummer": 30,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Partij van de Eenheid",
+				"gewicht": "1.00",
+				"nummer": 32,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "DE FEESTPARTIJ (DFP)",
+				"gewicht": "1.00",
+				"nummer": 33,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Vrij en Sociaal Nederland",
+				"gewicht": "1.00",
+				"nummer": 34,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Wij zijn Nederland",
+				"gewicht": "1.00",
+				"nummer": 35,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Modern Nederland",
+				"gewicht": "1.00",
+				"nummer": 36,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "De Groenen",
+				"gewicht": "1.00",
+				"nummer": 37,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}, {
+				"naam": "Partij voor de Republiek",
+				"gewicht": "1.00",
+				"nummer": 38,
+				"sortingWeight": 0,
+				"ingredienten": []
+			}
+		];
+	}
 
-    }
+	attached() {
+		this.showList = true;
+		this._upSubscriber = this.ea.subscribe("upPreference", response => {
+			this.updatePreferences(response, 1);
+		});
+		this._downSubscriber = this.ea.subscribe("downPreference", response => {
+			this.updatePreferences(response, -1);
+		});
+	}
 
-    attached() {
-        const byName = (a, b) => {
-            return a.naam > b.naam;
-        };
-        const sortedPizzas = this.pizzas.sort(byName);
-        console.json(sortedPizzas);
-    }
+	detached() {
+		this._upSubscriber.dispose();
+		this._downSubscriber.dispose();
+	}
 
+	updatePreferences(ingredient, d) {
+		this.showList = !this.showList;
+		this.parties.forEach(party => {
+			if (party.ingredienten.includes('~' + ingredient.name.toLowerCase())) {
+				// Negeren
+			} else {
+				if (party.ingredienten.includes(ingredient.name.toLowerCase())) {
+					party.sortingWeight += d;
+				} else {
+					party.sortingWeight -= d;
+				}
+			}
+		});
+		setTimeout(() => {
+			this.showList = !this.showList;
+		}, 0);
+	}
 
+}
 
-    updatePreferences(ingredient, d) {
-        this.showList = !this.showList;
-        for (let pizza of this.pizzas) {
-            if (pizza.ingredienten.includes(ingredient.name)) {
-                pizza.sortingWeight += d;
-            }
-        }
-        setTimeout(() => {
-            this.showList = !this.showList;
-        }, 0);
-    }
-
+export class IngredientenLijstValueConverter {
+	toView(array) {
+		const theString = array.filter(item => !item.includes('~')).join(', ');
+		return theString;
+	}
 }
