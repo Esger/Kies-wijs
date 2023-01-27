@@ -2,81 +2,96 @@
 #GENERAL
 \*------------------------------------*/
 html {
-  font-size: 100%;
+	font-size: 100%;
 }
 
 /* https://zellwk.com/blog/viewport-based-typography/ */
 /* Scales by 1px for every 100px from 600px onwards */
 @media (min-width: 600px) {
-    html {
-        font-size: calc(112.5% + 4 * (100vw - 600px) / 400)
-    }
+	html {
+		font-size: calc(112.5% + 4 * (100vw - 600px) / 400)
+	}
 }
 
 /* Sets font-size to 22px after a viewport of 1000px */
 @media (min-width: 1000px) {
-    html{
-        font-size: calc(137.5%)
-    }
+	html {
+		font-size: calc(137.5%)
+	}
 }
 
 
 body,
 html {
-    font-family: 'trebuchet MS', 'Roboto Condensed Regular', sans-serif;
-    line-height: 1.2;
-    min-width: 320px;
-    width: 100%;
-    height: 100%;
+	font-family: 'trebuchet MS', 'Roboto Condensed Regular', sans-serif;
+	line-height: 1.2;
+	min-width  : 320px;
+	width      : 100%;
+	height     : 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    overflow: hidden;
-    background-color: #00ae00;
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00ae00, endColorstr=white);
-    background-image: -moz-linear-gradient(top, #00ae00 10%, white 50%, red 90%);
-    background-image: linear-gradient(top, #00ae00 10%, white 50%, red 90%);
-    background-image: -webkit-linear-gradient(top, #00ae00 10%, white 50%, red 90%);
-    background-image: -o-linear-gradient(top, #00ae00 10%, white 50%, red 90%);
-    background-image: -ms-linear-gradient(top, #00ae00 10%, white 50%, red 90%);
-    background-image: -webkit-gradient(linear, right top, right bottom, color-stop(10%, #00ae00), color-stop(50%, white), color-stop(90%, red));
+	display            : flex;
+	flex-direction     : column;
+	align-items        : stretch;
+	overflow           : hidden;
+	background         : #00d2ff;
+	background         : linear-gradient(to top, #3a7bd5, #00d2ff);
+	/* background-color: #91d370;
+	background-image   : linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%); */
 }
 
 header,
 footer {
-    flex: 0 0 60px;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+	flex           : 0 0 60px;
+	padding        : 0 40px;
+	display        : flex;
+	align-items    : center;
+	align-content  : center;
+	justify-content: space-between;
 }
 
 h1 {
-    font-size: 2.2em;
-    line-height: 1;
-    color: white;
+	font-size     : 1.6em;
+	letter-spacing: 2px;
+	line-height   : 1;
+	color         : black;
 }
 
 h2 {
-    margin: 10px 0 20px;
-    font-size: 1.3em;
-    font-weight: normal;
-    line-height: 1;
+	font-family: palatino, cursive;
+	margin     : 10px 0 20px;
+	font-size  : 1.4em;
+	font-weight: normal;
+	font-style : italic;
+	line-height: 1;
+	color      : black;
 }
 
+p {
+	color: cadetblue;
+}
+
+h4 {
+	color  : steelblue;
+	display: flex;
+}
+
+li[class*=hint--]::after {
+	max-width  : 100%;
+	white-space: pre-wrap;
+	width      : max-content;
+	line-height: 1.6;
+}
 
 /*------------------------------------*\
 #HELPERS
 \*------------------------------------*/
 
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear  : both;
 }
 
 /*------------------------------------*\
@@ -84,53 +99,60 @@ h2 {
 \*------------------------------------*/
 
 .row {
-    display: flex;
-    min-height: 0;
+	display   : flex;
+	min-height: 0;
 }
 
 .row__header {
-    /*text-align: center;*/
+	text-align: center;
 }
 
 .row__column {
-    overflow-y: auto;
-    margin: 0 20px 0 40px;
-    padding: 10px 20px;
-    background-color: white;
-    -webkit-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, .3);
-    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, .3);
+	overflow-y        : auto;
+	opacity           : 0.8;
+	margin            : 0 20px 0 40px;
+	padding           : 10px 20px;
+	background-color  : white;
+	-webkit-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, .3);
+	box-shadow        : inset 0 0 15px 0 rgba(0, 0, 0, .3);
 }
 
 .row__column--last {
-    margin: 0 40px;
+	margin: 0 40px;
 }
 
 .row__column--2col {
-    flex: 1 1 50%;
+	flex: 1 1 50%;
 }
 
 @media screen and (max-width: 600px) {
-    header,
-    footer {
-        flex: 0 0 40px;
-        padding: 0 20px;
-    }
-    h2 {
-        margin: 10px 0 10px;
-    }
-    .hideMobile {
-        display: none;
-    }
-    .row__column {
-        margin: 0 10px 0 20px;
-        padding: 5px 10px;
-        -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .3);
-        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .3);
-    }
-    .row__column--last {
-        margin: 0 20px 0 10px;
-    }
-    .row__column--2col {
-        flex: 1 1 50%;
-    }
+
+	header,
+	footer {
+		flex   : 0 0 40px;
+		padding: 0 20px;
+	}
+
+	h2 {
+		margin: 10px 0 10px;
+	}
+
+	.hideMobile {
+		display: none;
+	}
+
+	.row__column {
+		margin            : 0 10px 0 20px;
+		padding           : 5px 10px;
+		-webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .3);
+		box-shadow        : inset 0 0 10px 0 rgba(0, 0, 0, .3);
+	}
+
+	.row__column--last {
+		margin: 0 20px 0 10px;
+	}
+
+	.row__column--2col {
+		flex: 1 1 50%;
+	}
 }

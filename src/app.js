@@ -1,12 +1,12 @@
 export class App {
-    constructor() {
-        this.title = 'Pizza Picker';
-        this.subtitle = 'De beste pizzas!';
-        this.ingredientsTitle = 'Kies je beleg...';
-    }
+	constructor() {
+		this.title = 'Partijenkiezer 2021';
+		this.subtitle = 'Kies ja of nee hiernaast';
+		this.ingredientsTitle = 'Wijs een thema aan';
+	}
 
-    reset() {
-        this.ingredientsViewModel.resetIngredients();
-        this.pizzasViewModel.resetPizzas();
-    }
+	reset() {
+		this.ingredientsViewModel.resetIngredients();
+		this.partiesViewModel.resetPizzas();
+	}
 }

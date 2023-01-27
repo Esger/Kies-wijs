@@ -1,7 +1,7 @@
 export class FooterCustomElement {
-    constructor() {
-        this.footerText = 'Eet smakelijk.';
-        this.footerText2 = 'Met dank aan pizzeria Napoli';
-        this.footerLink = 'ashWare'
-    }
+	constructor() {
+		this.footerText = 'Kies wijs';
+		this.footerText2 = 'Met stellingen van Stemwijzer.nl';
+		this.footerLink = 'ashWare';
+	}
 }
